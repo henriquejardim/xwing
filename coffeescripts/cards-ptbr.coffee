@@ -130,50 +130,91 @@ exportObj.cardLoaders['Português'] = () ->
 
     # Names don't need updating, but text needs to be set
     pilot_translations =
+        # X-Wing
+        "Red Squadron Pilot":
+            name: "Piloto do Esquadrão Vermelho"
+        "Rookie Pilot":
+            name: "Piloto Recruta"
         "Wedge Antilles":
-            text: """When attacking, reduce the defender's agility value by 1 (to a minimum of "0")."""
+            text: """Ao atacar, reduza em1 o valor de agilidade do defensor (até um mínimo de "0")."""
         "Garven Dreis":
-            text: """After spending a focus token, you may place that token on any other friendly ship at Range 1-2 (instead of discarding it)."""
+            text: """Depois de gastar uma ficha de foco, você pode colocar essa ficha em qualquer outra nave amiga em Alcance 1-2 (em vez de descartá-la)."""
         "Biggs Darklighter":
-            text: """Other friendly ships at Range 1 cannot be targeted by attacks if the attacker could target you instead."""
+            text: """Outras navas amigas em Alcance 1 não podem ser alvo de ataques se o atacante puder, em vez disso, atacar você."""
         "Luke Skywalker":
-            text: """When defending, you may change 1 of your %FOCUS% results to a %EVADE% result."""
+            text: """Ao defender, você pode mudar 1 de seus resultados %FOCUS% para um resultado %EVADE%."""
+        # Y-Wing
+        "Gold Squadron Pilot":
+            name: "Piloto do Esquadrão Dourado"
+        "Gray Squadron Pilot":
+            name: "Piloto do Esquadrão Cinza"
         '"Dutch" Vander':
-            text: """After acquiring a target lock, choose another friendly ship at Range 1-2.  The chosen ship may immediately acquire a target lock."""
+            text: """Depois de adquirir uma mira, escolha outra nave amiga em Alcance 1-2. A nave escolhida pode adquirir imediatamente uma mira."""
         "Horton Salm":
-            text: """When attacking at Range 2-3, you may reroll any of your blank results."""
+            text: """Ao atacar de Alcance 2-3, você pode rerrolar qualquer de seus resultados em branco."""
+        # TIE Fighter
+        "Academy Pilot":
+            name: "Piloto da Academia"
+        "Obsidian Squadron Pilot":
+            name: "Piloto do Esquadrão Obsidian"
+        "Black Squadron Pilot":
+            name: "Piloto do Esquadrão Negro"
         '"Winged Gundark"':
-            text: """When attacking at Range 1, you may change 1 of your %HIT% results to a %CRIT% result."""
+            text: """Ao atacar em Alcance 1, você pode mudar um dos seus resultados %HIT% para um resultado %CRIT%."""
         '"Night Beast"':
-            text: """After executing a green maneuver, you may perform a free focus action."""
+            text: """Após executar uma manobra verde, você pode realizar uma ação de foco gratuita."""
         '"Backstabber"':
-            text: """When attacking from outside the defender's firing arc, roll 1 additional attack die."""
+            text: """Ao atavar de fora do arco de tiro do defensor, role 1 dado de ataque adicional."""
         '"Dark Curse"':
-            text: """When defending, ships attacking you cannot spend focus tokens or reroll attack dice."""
+            text: """Quando você estiver defendendo, as navas atacantes não podem gastar fichas de foco ou rerrolar dados de ataque."""
         '"Mauler Mithel"':
-            text: """When attacking at Range 1, roll 1 additional attack die."""
+            text: """Ao atacar em Alcance 1, role um dado de ataque adicional."""
         '"Howlrunner"':
-            text: """When another friendly ship at Range 1 is attacking with its primary weapon, it may reroll 1 attack die."""
+            text: """Quando outra nave amiga em Alcance 1 atava com sua arma primária, ela pode rerrolar 1 dade de ataque."""
+        # TIE Advanced
+        "Tempest Squadron Pilot":
+            name: "Piloto do Esquadrão Tempestade"
+        "Storm Squadron Pilot":
+            name: "Piloto do Esquadrão Tormenta"
         "Maarek Stele":
-            text: """When your attack deals a faceup Damage card to the defender, instead draw 3 Damage cards, choose 1 to deal, and discard the others."""
+            text: """Quando seu ataque inflige ao defensor uma carta de Dano virada para cima, em vez disso, tire 3 cartas de Dano, escolha 1 para entregar e descarte as outras."""
         "Darth Vader":
-            text: """During your "Perform Action" step, you may perform 2 actions."""
+            text: """Durante o seu passo "Realizar Ação", você pode realizar 2 ações."""
+        # TIE Interceptor
+        "Alpha Squadron Pilot":
+            name: "Piloto do Esquadrão Alfa"
+        "Avenger Squadron Pilot":
+            name: "Piloto do Esquadrão Vingador"
+            ship: "Intercepteur TIE"
+        "Saber Squadron Pilot":
+            name: "Piloto do Esquadrão Sabre"
+        "Royal Guard Pilot":
+            name: "Pilote de la Garde royale"
+            ship: "Intercepteur TIE"
         "\"Fel's Wrath\"":
-            text: """When the number of Damage cards assigned to you equals or exceeds your hull value, you are not destroyed until the end of the Combat phase."""
+            text: """Quando o número de cartas de Dano atribuídas a você for igual ou maior que seu valor de casco, você não é destruído até o fim da fase de Combate."""
         "Turr Phennir":
-            text: """After you perform an attack, you may perform a free boost or barrel roll action."""
+            text: """Após realizar um ataque, você pode realizar uma ação de impulso ou de pirueta gratuita."""
         "Soontir Fel":
-            text: """When you receive a stress token, you may assign 1 focus token to your ship."""
+            text: """Quando você receber uma ficha de estresse, você pode colocar 1 ficha de foco em sua nave."""
+        # A-Wing
+        "Green Squadron Pilot":
+            name: "Piloto do Esquadrão Verde"
+        "Prototype Pilot":
+            name: "Piloto de Protótipo"
         "Tycho Celchu":
-            text: """You may perform actions even while you have stress tokens."""
+            text: """Você pode realizar ações mesmo quando tiver fichas de estresse."""
         "Arvel Crynyd":
-            text: """You may declare an enemy ship inside your firing arc that you are touching as the target of your attack."""
+            text: """Você pode declarar uma nave inimiga que você estiver tocando, dentro de seu arco de tiro, como o alvo de seu ataque."""
+        # YT-1300
+        "Outer Rim Smuggler":
+            name: "Contrabandista da Orla Exterior"
         "Chewbacca":
-            text: """When you are dealt a faceup Damage card, immediately flip it facedown (without resolving its ability)."""
+            text: """Quando você recebe uma carta de Dano virada para cimam vire-a imediatamente para baixo (sem resolver sua habilidade)."""
         "Lando Calrissian":
-            text: """After you execute a green maneuver, choose 1 other friendly ship at Range 1.  That ship may perform 1 free action shown on its action bar."""
+            text: """Após executar uma manobra verde escolha 1 outra nave amiga em Alcance 1. Esta nave pode realizar 1 ação gratuita exibida em sua barra de ação."""
         "Han Solo":
-            text: """When attacking, you may reroll all of your dice.  If you choose to do so, you must reroll as many of your dice as possible."""
+            text: """Ao atacar, você pode rerrolar todos os seus dados.   Se escolher fazer isso, você deve rorrolar a maior quantidade possível de seus dados."""
         "Kath Scarlet":
             text: """When attacking, the defender receives 1 stress token if he cancels at least 1 %CRIT% result."""
         "Boba Fett":
@@ -554,10 +595,10 @@ exportObj.cardLoaders['Português'] = () ->
     modification_translations =
         "Stealth Device":
             text: """Increase your agility value by 1.  If you are hit by an attack, discard this card."""
-        "Shield Upgrade":
-            text: """Increase your shield value by 1."""
-        "Engine Upgrade":
-            text: """Your action bar gains the %BOOST% action icon."""
+        "Melhoria de Escudo":
+            text: """Aumente o valor de seu escudo em 1."""
+        "Melhoria de Motor":
+            text: """Sua barra de ações ganha o ícone de ação %BOOST%."""
         "Anti-Pursuit Lasers":
             text: """%LARGESHIPONLY%%LINEBREAK%After an enemy ship executes a maneuver that causes it to overlap your ship, roll 1 attack die.  On a %HIT% or %CRIT% result, the enemy ship suffers 1 damage."""
         "Targeting Computer":
@@ -587,7 +628,7 @@ exportObj.cardLoaders['Português'] = () ->
         "Slave I":
             text: """<span class="card-restriction">Firespray-31 only.</span>%LINEBREAK%Your upgrade bar gains the %TORPEDO% upgrade icon."""
         "Millennium Falcon":
-            text: """<span class="card-restriction">YT-1300 only.</span>%LINEBREAK%Your action bar gains the %EVADE% action icon."""
+            text: """<span class="card-restriction">Apenas YT-1300.</span>%LINEBREAK%Sua barra de ações ganha o ícone de ação %EVADE%."""
         "Moldy Crow":
             text: """<span class="card-restriction">HWK-290 only.</span>%LINEBREAK%During the End phase, do not remove unused focus tokens from your ship."""
         "ST-321":
